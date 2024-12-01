@@ -1,7 +1,16 @@
 // script.js
 
-// Smooth scroll back to top
-document.querySelector('.back-to-top').addEventListener('click', (e) => {
-  e.preventDefault()
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    })
+  })
 })
+
+// Toggle menu for mobile view
+function toggleMenu() {
+  document.getElementById('nav-menu').classList.toggle('active')
+}

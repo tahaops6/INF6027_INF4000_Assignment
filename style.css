@@ -1,46 +1,126 @@
+/* styles.css */
+
+/* General Settings */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f7f7f7;
     color: #333;
-}
-
-header {
-    background: #6a11cb;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-main {
-    padding: 20px;
+    background: #f7f9fc;
+    scroll-behavior: smooth;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-section {
-    background: white;
+/* Header Section */
+.hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-section p {
     margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
 }
 
-section img {
-    max-width: 100%;
-    margin-top: 20px;
-    border-radius: 8px;
+.hero-section .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #6a11cb;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
+.hero-section .btn:hover {
+    background: #2575fc;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #6a11cb;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2575fc;
+    margin-bottom: 20px;
+}
+
+/* Project Links */
+.project-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #6a11cb;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
+
+/* Footer */
 footer {
     background: #333;
     color: white;
@@ -51,4 +131,19 @@ footer {
 footer a {
     color: #6a11cb;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: #6a11cb;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: #2575fc;
 }

@@ -17,7 +17,8 @@
             <div class="container">
                 <h2>Introduction</h2>
                 <p>
-                    This project focuses on analyzing sector-specific stock market behavior using machine learning techniques. By examining weekly trading data, it identifies key predictors of stock price volatility and evaluates the performance of Random Forest and XGBoost models.
+                    Stock price volatility serves as a critical indicator of market risk, reflecting economic conditions, market sentiment, and liquidity dynamics. This research examines the drivers of volatility in the Health and Technology sectors, focusing on sector-specific influences such as regulatory decisions and innovation cycles. Using advanced feature engineering and predictive modeling, it evaluates key patterns and the performance of models like Random Forest and XGBoost. The findings aim to enhance understanding of sector-specific risks, offering insights for investors and policymakers.
+
                 </p>
             </div>
         </section>
@@ -37,9 +38,11 @@
             <div class="container">
                 <h2>Key Findings</h2>
                 <ul>
-                    <li>Trading volume strongly correlates with price volatility in the technology sector.</li>
-                    <li>Technical indicators like RSI and VWAP are critical predictors.</li>
-                    <li>XGBoost outperformed Random Forest, achieving higher accuracy and lower error metrics.</li>
+                    <li>Higher trading volumes were strongly correlated with price volatility, particularly in the technology sector.</li>
+                    <li>Features such as VWAP, Bollinger Bands, and RSI emerged as key predictors of volatility.</li>
+                    <li>XGBoost consistently outperformed Random Forest, achieving higher R² values and lower RMSE in both sectors.</li>
+                    <li>Technology stocks demonstrated higher predictive accuracy due to greater feature variability, while health stocks required stability-focused features.</li>
+                    <li>Lagged weekly returns played a pivotal role in forecasting stock price volatility.</li>
                 </ul>
             </div>
         </section>

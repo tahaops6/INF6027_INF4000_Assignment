@@ -38,11 +38,11 @@
             <div class="container">
                 <h2>Key Findings</h2>
                 <ul>
-                    <li>Higher trading volumes were strongly correlated with price volatility, particularly in the technology sector.</li>
-                    <li>Features such as VWAP, Bollinger Bands, and RSI emerged as key predictors of volatility.</li>
-                    <li>XGBoost consistently outperformed Random Forest, achieving higher R² values and lower RMSE in both sectors.</li>
+                    <li>Technology sector volatility is event-driven with sharp spikes, while the health sector shows stable, periodic trends influenced by regulations.</li>
+                    <li>Health sector relies on lagged volatility and ATR, while RSI and MACD dominate in the momentum-driven technology sector.</li>
+                    <li>XGBoost excelled in the health sector, while Random Forest performed better in the dynamic technology sector.</li>
                     <li>Technology stocks demonstrated higher predictive accuracy due to greater feature variability, while health stocks required stability-focused features.</li>
-                    <li>Lagged weekly returns played a pivotal role in forecasting stock price volatility.</li>
+                    <li>SHAP values validated sector-specific feature importance, improving transparency and enhancing feature selection.</li>
 
                     
                 

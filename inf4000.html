@@ -1565,15 +1565,91 @@ ggplot(combined_rf_results, aes(x = Week)) +
             </div>
         </section>
 
-        <section>
+         <section>
             <div class="container">
-                <h2>Instructions</h2>
-                <p>
-                    Clone the repository: <code>git clone https://github.com/yourusername/INF4000</code><br>
-                    Install Python dependencies: <code>pandas</code>, <code>scikit-learn</code>, <code>matplotlib</code>.<br>
-                    Run the scripts as per the instructions in the README.
-                </p>
+                <h2>R Code</h2>
+                <p>Access the R scripts <a href="https://github.com/tahaops6/INF6027-IDS/blob/main/INF6027_Assignment.R" target="_blank">here</a>.</p>
             </div>
+        </section>
+
+        <section>
+    <div class="container">
+        <h2>Instructions for Downloading and Running the Code</h2>
+        <h3>Repository Link</h3>
+        <p>
+            Access the project repository on GitHub: <a href="https://github.com/tahaops6/INF6027-IDS.git" target="_blank">INF6027-IDS</a>
+        </p>
+        <h3>Step 1: Clone the Repository</h3>
+        <ol>
+            <li>
+                <strong>Clone or Download the Repository:</strong>
+                <ul>
+                    <li>Go to the repository link: <a href="https://github.com/tahaops6/INF6027-IDS.git" target="_blank">INF6027-IDS</a></li>
+                    <li>Click the green <strong>Code</strong> button.</li>
+                    <li>Choose <strong>Download ZIP</strong> to download the repository as a ZIP file or use Git to clone it:</li>
+                </ul>
+                <pre><code>git clone https://github.com/tahaops6/INF6027-IDS.git</code></pre>
+                <ul>
+                    <li>Extract the ZIP file to your desired directory if downloaded.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>The repository contains:</strong>
+                <ul>
+                    <li><code>INF6027_Assignment.R</code> (R script)</li>
+                    <li><code>Health.zip</code> (Health sector dataset)</li>
+                    <li><code>Technology.zip</code> (Technology sector dataset)</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Step 2: Extract Data Files</h3>
+        <ol>
+            <li>Navigate to the downloaded/extracted repository folder.</li>
+            <li>Extract the contents of <code>Health.zip</code> and <code>Technology.zip</code> into their respective folders:</li>
+            <ul>
+                <li>Ensure the <code>Health</code> folder contains CSV files related to the Health sector.</li>
+                <li>Ensure the <code>Technology</code> folder contains CSV files related to the Technology sector.</li>
+            </ul>
+        </ol>
+
+        <h3>Step 3: Install Prerequisites</h3>
+        <ol>
+            <li>
+                <strong>Install R and RStudio:</strong>
+                <ul>
+                    <li>Download and install <a href="https://cran.r-project.org/" target="_blank">R</a>.</li>
+                    <li>Download and install <a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio</a>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Install Required Packages:</strong>
+                <ul>
+                    <li>Open RStudio and run the following command to install necessary libraries:</li>
+                </ul>
+                <pre><code>install.packages(c("dplyr", "ggplot2", "randomForest", "caret", "xgboost", "reshape2", "iml", "zoo", "plotly", "GGally", "lubridate"))</code></pre>
+            </li>
+        </ol>
+
+        <h3>Step 4: Run the Code</h3>
+        <ol>
+            <li>
+                <strong>Set the Working Directory:</strong>
+                <ul>
+                    <li>In RStudio, open the script <code>INF6027_Assignment.R</code>.</li>
+                    <li>Update the following line to match the directory where you downloaded the repository:</li>
+                </ul>
+                <pre><code>setwd("C:/path/to/INF6027-IDS")</code></pre>
+            </li>
+            <li>
+                <strong>Run the Script:</strong>
+                <ul>
+                    <li>Run the entire script by clicking <strong>Source</strong> in RStudio.</li>
+                    <li>Alternatively, execute specific sections step-by-step by selecting lines of code and pressing <strong>Ctrl + Enter</strong>.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
         </section>
     </main>
     <footer>
